@@ -1,4 +1,5 @@
-export default function Footer(){
+export default function Footer(props){
+    const {count, setCount, close} = props;
     return (
         <div className="footer">
             <div className="footer_info">
@@ -7,7 +8,7 @@ export default function Footer(){
                 <p className="footer_nature">Colorful Aurora over New Zealand</p>
                 </div>
           
-            <button>add</button>
+            <button onClick={()=>{close()}}>add</button>
             </div>
         
         </div>
