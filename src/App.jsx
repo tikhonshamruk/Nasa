@@ -14,10 +14,12 @@ function App() {
   }
 
   return (
-      <div>
-       <Main></Main>
+      <div className="main_div">
+        <div className='wrapper'>
+        <Main></Main>
        {count &&
        <SideBar close={close} setCount={setCount} count={count}></SideBar>}
+        </div>
        <Footer close={close} setCount={setCount} count={count}></Footer>
     </div>
   )

@@ -26,11 +26,14 @@
   flex-direction: row;
 }
 
+.main_div{
+  width: 100%;
+}
+
 .main{
   position: fixed;
   height: 100%;
   width: 100%;
- 
 }
 
 
@@ -87,7 +90,23 @@
 
 @media (min-width:640px) {
   .sidebar{
+    background-color: goldenrod;
     position: relative;
-    inset: unset;
+    width: 30%;
+    background-attachment: fixed;
+  }
+  .main{
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  .main .img_aurora{
+    height: 100%;
+    background-attachment: fixed;
+  }
+  .wrapper{
+    display: flex;
+    flex-direction: row;
+    
   }
 }
